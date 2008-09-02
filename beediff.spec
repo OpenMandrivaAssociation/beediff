@@ -14,6 +14,9 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Buildrequires: qt4-devel
 
 %description
+BeeDiff (beediff) is a graphical file comparator.
+User have a possibilty to compare a two text files.
+All differences are highlighted in colors.
 
 %prep
 %setup -q -n %{name}
