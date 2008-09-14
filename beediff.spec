@@ -1,6 +1,6 @@
 %define name beediff
 %define version 1.9
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Graphical file comparator
 Name:    %{name}
@@ -8,8 +8,8 @@ Version: %{version}
 Release: %{release}
 License: GPLv2+
 Group:   File tools
-URL:     http://www.beesoft.org/beediff.html
-Source0: %{name}_%{version}_src.tar.gz
+URL:     http://www.beesoft.at/index.php?id=beediff
+Source0: http://www.beesoft.at/download/%{name}_%{version}_src.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Buildrequires: qt4-devel
 
@@ -22,19 +22,17 @@ All differences are highlighted in colors.
 %setup -q -n %{name}
 
 %build
-qmake
+%qmake_qt4
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-# mkdir -p %{buildroot}/%{_bindir} %{buildroot}/%{%_iconsdir}
 install -D %{name} %{buildroot}/%{_bindir}/%{name}
 install -D img/%{name}.png %{buildroot}/%{_iconsdir}/%{name}.png
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(-,root,root,-)
