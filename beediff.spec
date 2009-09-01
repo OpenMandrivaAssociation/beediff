@@ -1,6 +1,6 @@
 %define name beediff
 %define version 1.9
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: Graphical file comparator
 Name:    %{name}
