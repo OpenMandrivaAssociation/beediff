@@ -1,6 +1,6 @@
 %define name beediff
 %define version 1.9
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary: Graphical file comparator
 Name:    %{name}
@@ -8,10 +8,10 @@ Version: %{version}
 Release: %{release}
 License: GPLv2+
 Group:   File tools
-URL:     http://www.beesoft.at/index.php?id=beediff
-Source0: http://www.beesoft.at/download/%{name}_%{version}_src.tar.gz
+URL:     http://www.beesoft.org/index.php?id=beediff
+Source0: http://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-Buildrequires: qt4-devel
+BuildRequires: qt4-devel
 
 %description
 BeeDiff (beediff) is a graphical file comparator.
@@ -39,5 +39,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc licence.txt
 %{_bindir}/%{name}
 %{_iconsdir}/%{name}.png
-
-
