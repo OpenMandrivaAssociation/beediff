@@ -39,3 +39,35 @@ rm -rf $RPM_BUILD_ROOT
 %doc licence.txt
 %{_bindir}/%{name}
 %{_iconsdir}/%{name}.png
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 1.9-5mdv2011.0
++ Revision: 610064
+- rebuild
+
+* Tue Jun 22 2010 Ahmad Samir <ahmadsamir@mandriva.org> 1.9-4mdv2010.1
++ Revision: 548543
+- change url and source to the new location, (mdv #59882)
+
+* Tue Sep 01 2009 Thierry Vignaud <tv@mandriva.org> 1.9-3mdv2010.0
++ Revision: 424030
+- rebuild
+
+* Sun Sep 14 2008 Funda Wang <fwang@mandriva.org> 1.9-2mdv2009.0
++ Revision: 284696
+- rebuild with correct flags
+- spec cleanup
+
+* Sun Sep 14 2008 trem <trem@mandriva.org> 1.9-1mdv2009.0
++ Revision: 284666
+- update to 1.9
+
+* Tue Sep 02 2008 trem <trem@mandriva.org> 1.8-1mdv2009.0
++ Revision: 279339
+- add description
+- import beediff
+
+
+* Sun Aug 31 2008 trem <trem@mandriva.org> 
+- Initial build.
