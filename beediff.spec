@@ -8,7 +8,7 @@ Version: %{version}
 Release: %{release}
 License: GPLv2+
 Group:   File tools
-URL:     http://www.beesoft.org/index.php?id=beediff
+URL:     https://www.beesoft.org/index.php?id=beediff
 Source0: http://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: qt4-devel
