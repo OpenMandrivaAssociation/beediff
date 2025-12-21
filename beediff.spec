@@ -11,6 +11,7 @@ Group:   File tools
 URL:     https://www.beesoft.org/index.php?id=beediff
 Source0: http://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+BuildRequires:	make
 BuildRequires: qt4-devel
 
 %description
